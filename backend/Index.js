@@ -13,9 +13,7 @@ app.use(express.json());
 
 app.use(
   cors({
-      origin: process.env.CORS_ORIGIN, 
-      credentials: true, 
-      maxAge: 14400, 
+      origin: process.env.CORS_ORIGIN 
   })
 );
 
