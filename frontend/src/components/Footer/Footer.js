@@ -41,9 +41,9 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="text-center">
             <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
-            <p className="text-gray-400">123 Main Street, Anytown USA</p>
-            <p className="text-gray-400">info@acmedigital.com</p>
-            <p className="text-gray-400">(555) 555-5555</p>
+            <p className="text-gray-400">A-142 Noida Sector 63</p>
+            <p className="text-gray-400">pioneerventures44@gmail.com</p>
+            <p className="text-gray-400">9810475719</p>
           </div>
         </div>
       </div>
