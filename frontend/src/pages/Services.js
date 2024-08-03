@@ -21,8 +21,10 @@ import realimg from '../assets/images/28.jpeg';
     <div className="flex">
     <div className="w-[50%]">
      <video src={vid1}
+     controls={false}
      autoPlay
      muted
+     playsInline
      loop
      />
     </div>
@@ -30,7 +32,9 @@ import realimg from '../assets/images/28.jpeg';
 <video
   className="w-[800px]"
   src={vid1}
+  controls={false}
   autoPlay
+  playsInline
   muted
   loop />
 </div>
