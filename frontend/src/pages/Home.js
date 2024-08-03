@@ -2,10 +2,19 @@
 import { motion } from "framer-motion";
 import { AuroraBackground } from "../components/ui/aurora-background";
 import LayoutGrid from "../components/ui/layout-grid";
-import banner from '../assets/images/banner.mp4'
+// import banner from '../assets/images/banner.mp4'
 import Card from "../components/card/Card";
 import approach from '../assets/images/arrowe.png';
-
+import b1 from '../assets/images/b1.png';
+import { Link } from "react-router-dom";
+import mediaimg from '../assets/images/21.jpeg';
+import constructionimg from '../assets/images/22.jpeg';
+import foodimg from '../assets/images/23.jpeg';
+import healthimg from '../assets/images/24.jpeg';
+import itimg from '../assets/images/25.jpeg';
+import disimg from '../assets/images/26.jpeg';
+import renewimg from '../assets/images/27.jpeg';
+import realimg from '../assets/images/28.jpeg';
 
 const Home = () => {
 
@@ -80,7 +89,7 @@ const SkeletonOne = () => {
       <p className="font-bold text-4xl text-white">Media</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-       Investing in innovative media companies that are reshaping content creation, distribution, and consumption in the digital age.
+      Shaping narratives and engaging audiences through cutting-edge content creation and distribution.
       </p>
     </div>
   );
@@ -92,7 +101,7 @@ const SkeletonTwo = () => {
       <p className="font-bold text-4xl text-white">Constructions</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      Supporting advancements in construction technology, sustainable building practices, and infrastructure development for a better tomorrow
+      Building the future with sustainable practices and visionary architecture.
       </p>
     </div>
   );
@@ -103,7 +112,7 @@ const SkeletonThree = () => {
       <p className="font-bold text-4xl text-white">Food & Beverages</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      Fostering growth in the food and beverage industry with a focus on health, sustainability, and innovative product offerings.
+      Crafting culinary experiences that delight and nourish.
       </p>
     </div>
   );
@@ -114,7 +123,7 @@ const SkeletonFour = () => {
       <p className="font-bold text-4xl text-white">HealthCare</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      Investing in cutting-edge healthcare solutions, from medical devices to biotechnology, improving patient outcomes and overall health.
+      Advancing wellness and healthcare solutions through innovation and compassion.
       </p>
     </div>
   );
@@ -125,7 +134,7 @@ const SkeletonFive = () => {
       <p className="font-bold text-4xl text-white">Information Technology</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      Empowering the future of IT with investments in software, hardware, cybersecurity, and AI-driven solutions for various industries.
+      Empowering businesses with digital solutions and technological advancements.
       </p>
     </div>
   );
@@ -136,7 +145,7 @@ const SkeletonSix = () => {
       <p className="font-bold text-4xl text-white">Media Distribution</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      Enhancing media distribution networks, ensuring efficient and widespread access to high-quality content across multiple platforms.
+      Connecting global audiences through seamless content delivery and strategic partnerships.
       </p>
     </div>
   );
@@ -147,7 +156,7 @@ const SkeletonSeven = () => {
       <p className="font-bold text-4xl text-white">Renewable Energy</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      Championing sustainable energy solutions, from solar to wind, reducing carbon footprints and promoting a greener planet. 
+      Leading the charge towards a sustainable future with renewable energy solutions.
       </p>
     </div>
   );
@@ -158,7 +167,7 @@ const SkeletonEight = () => {
       <p className="font-bold text-4xl text-white">Real Estate</p>
       <p className="font-normal text-base text-white"></p>
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-      Investing in prime real estate ventures, focusing on sustainable developments and smart city innovations for modern living.
+      Creating spaces that inspire and endure, enriching communities and lifestyles.
       </p>
     </div>
   );
@@ -168,65 +177,58 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: "md:col-span-2",
-    thumbnail:
-      "https://res.cloudinary.com/dvahmkxd9/image/upload/v1720171374/pioneer%20ventures/WhatsApp_Image_2024-07-05_at_1.45.25_PM_q9avh5.jpg"},
+    className: "md:col-span-1",
+    thumbnail: mediaimg},
    {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
-    thumbnail:
-      "https://res.cloudinary.com/dvahmkxd9/image/upload/v1720171374/pioneer%20ventures/WhatsApp_Image_2024-07-05_at_1.46.27_PM_novopx.jpg" },
+    thumbnail: constructionimg},
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
-    thumbnail:
-      "https://res.cloudinary.com/dvahmkxd9/image/upload/v1720171375/pioneer%20ventures/WhatsApp_Image_2024-07-05_at_1.56.04_PM_klqhah.jpg" },
+    thumbnail: foodimg},
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-1",
-    thumbnail:
-      "https://res.cloudinary.com/dvahmkxd9/image/upload/v1720171374/pioneer%20ventures/WhatsApp_Image_2024-07-05_at_2.11.49_PM_zvjsqy.jpg"},
-  {
+    thumbnail: healthimg},
+    {
     id: 5,
     content: <SkeletonFive />,
-    className: "md:col-span-1",
-    thumbnail:
-      "https://res.cloudinary.com/dvahmkxd9/image/upload/v1720171374/pioneer%20ventures/WhatsApp_Image_2024-07-05_at_2.38.22_PM_alqvvx.jpg" },
-  {
+    className: "md:col-span-2",
+    thumbnail: itimg},
+     {
     id: 6,
     content: <SkeletonSix />,
     className: "md:col-span-1",
-    thumbnail:
-      "https://res.cloudinary.com/dvahmkxd9/image/upload/v1720171375/pioneer%20ventures/WhatsApp_Image_2024-07-05_at_2.40.57_PM_zdvjag.jpg"},
-  {
+    thumbnail: disimg},
+     {
     id: 7,
     content: <SkeletonSeven />,
     className: "md:col-span-1",
-    thumbnail:
-      "https://res.cloudinary.com/dvahmkxd9/image/upload/v1720171375/pioneer%20ventures/WhatsApp_Image_2024-07-05_at_2.42.19_PM_x3ivp8.jpg" },
-  {
+    thumbnail: renewimg},
+   {
     id: 8,
     content: <SkeletonEight />,
     className: "md:col-span-1",
-    thumbnail:
-      "https://res.cloudinary.com/dvahmkxd9/image/upload/v1720171374/pioneer%20ventures/WhatsApp_Image_2024-07-05_at_1.52.02_PM_narbac.jpg"},
-];
+    thumbnail: realimg},
+  ];
   return (
     <>
     <div className=" relative w-full ">
-      <video src={banner}
+      <img src={b1} alt="" />
+      {/* <video src={banner}
       autoPlay
       loop
       muted
       className="z-0"
-      ></video>
+      ></video> */}
     </div>
-    <div className="absolute z-10 top-[150px] md:top-[200px] font-serif text-center tracking-wider text-xl md:text-3xl font-medium bg-[rgba(0,0,0,0.5)] md:bg-[rgba(0,0,0,0.2)] text-white w-full">
-  Empowering visionary entrepreneurs to build transformative companies
-</div>
+    {/* <div className="absolute z-10 top-[150px] md:top-[200px] font-serif text-center tracking-wider text-xl md:text-3xl font-medium bg-[rgba(0,0,0,0.5)] md:bg-[rgba(0,0,0,0.2)] text-white w-full">
+    Where innovation meets opportunity.
+</div> */}
 
 
     <AuroraBackground>
@@ -245,7 +247,7 @@ const cards = [
     </div>
      {/* all content of home page */}
 <div  className="text-lg text-center md:mx-[110px] ">
-Pioneer Ventures is a leading venture capital firm dedicated to supporting visionary entrepreneurs. Our mission is to foster innovation and drive growth by providing the capital, expertise, and network needed to transform ambitious ideas into industry-leading companies.
+At Pioneer Ventures, our mission is to pioneer new possibilities in each sector we operate in, driven by a commitment to innovation, sustainability, and excellence. Our diversified expertise enables us to navigate complexities and seize opportunities, delivering value and shaping industries globally.
 </div>
 
     </motion.div>
@@ -269,7 +271,7 @@ Pioneer Ventures is a leading venture capital firm dedicated to supporting visio
           {/* card hover effec t sectioon */}
           <div className="flex justify-center items-center">
   <div className="my-5">
-    <p className="text-center text-2xl md:text-3xl font-bold mb-3 md:my-6">Our Core Values</p>
+    {/* <p className="text-center text-2xl md:text-3xl font-bold mb-3 md:my-6">Our Core Values</p> */}
     <Card data={data} />
   </div>
 </div>
@@ -289,28 +291,26 @@ Pioneer Ventures is a leading venture capital firm dedicated to supporting visio
       }}
       className="relative flex flex-col gap-4 items-center justify-center px-4"
     >
+      <p className="text-xl md:text-3xl font-bold mt-[70px] md:my-5 md:mt-[-20px]">Our Values</p>
+
   <div className="flex flex-col md:flex-row items-center md:items-start">
-      <div className="text-center  my-3 ml-2 md:ml-[10px]">
-        <p className="text-2xl md:text-3xl font-bold mt-24 md:mt-20">Our Approach</p>
-      </div>
+      {/* <div className="text-center  my-3 ml-2 md:ml-[10px]">*/}
+        
       {/* all content of home page */}
-      <div className="text-lg text-center font-medium mx-4 md:mx-[110px]">
-        <p className="my-2 md:my-5 md:mt-20">
-          At <span className="text-red-800">Pioneer Ventures</span> we believe in more than just funding a business
-        </p>
-        <p>
-          We try to offer a partnership that encompasses strategic guidance, operational support, and access to a global network with overall success.
+      <div className=" text-md md:text-lg font-medium mx-4 text-center">
+        <p className="my-2 md:my-5 md:mt-0 ">
+        At <span className="text-red-800">Pioneer Ventures,</span> we are dedicated to fostering innovation, integrity, and excellence across our diverse range of businesses. Our core values drive us to deliver exceptional quality and service in media, construction, real estate, food and beverages, healthcare, and beyond. We believe in the power of collaboration, sustainability, and community engagement, striving to have a positive impact on everything we do. Our commitment to ethical practices and continuous improvement ensures that we not only meet but exceed the expectations of our partners and stakeholders.
         </p>
       </div>
-      <div className="w-full md:w-[40%] flex justify-center md:justify-start">
-        <img src={approach} alt="approach" className="w-full md:w-[500px] h-auto" />
+      <div className="w-[40%] md:w-[40%] flex justify-center md:justify-start">
+        <img src={approach} alt="approach" className="w-full  md:w-[600px] h-auto" />
       </div>
     </div>
     </motion.div>
     </AuroraBackground>
 </div>
 <div className="">
-<p className="text-center text-3xl font-bold mt-28 md:mt-6 my-2">Our Investment Partner</p>
+<p className="text-center text-3xl font-bold mt-28 md:mt-6 my-2">Our Business Verticals</p>
     <div className=" md:h-[110vh] ">
       <LayoutGrid cards={cards} />
     </div>
@@ -326,9 +326,11 @@ Pioneer Ventures is a leading venture capital firm dedicated to supporting visio
   <div  className="text-lg text-center mx-3 md:mx-[110px] my-4">
   Ready to take the next step? We'd love to hear from you.
 </div>
+<Link to={'/contact'}>
 <button className="text-white bg-blue-600 p-3 rounded my-4">
 Connect Now
 </button>
+</Link>
 </div>
   
     </>

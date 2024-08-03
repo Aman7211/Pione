@@ -9,13 +9,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row  justify-evenly">
           {/* Logo and Description */}
           <div className="flex flex-col items-center">
-            <Link to="#" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <img src={Logo} alt='logo' className="w-24" />
             </Link>
-            <p className="text-gray-300 text-sm text-center mt-4 mx-">
-              Pioneer Ventures is a premier venture <br/>
-              capitalist firm dedicated to empowering visionary <br/>
-              entrepreneurs to build transformative brands.
+            <p className="text-gray-300 text-sm text-center mt-4 my-4">
+            Innovation meets opportunity across multiple industries
             </p>
           </div>
           
@@ -42,7 +40,7 @@ const Footer = () => {
           <div className="text-center">
             <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
             <p className="text-gray-400">A-142 Noida Sector 63</p>
-            <p className="text-gray-400">pioneerventures44@gmail.com</p>
+            <p className="text-gray-400">info@pioneerventures.in</p>
             <p className="text-gray-400">9810475719</p>
           </div>
         </div>
@@ -51,14 +49,14 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="bg-gray-900 border-t border-gray-700 py-6 px-4 md:px-6 text-center">
         <p className="text-xs text-gray-400">&copy; 2024 Pioneer Ventures. All rights reserved.</p>
-        <nav className="mt-2 flex justify-center sm:justify-end gap-4 sm:gap-6">
+        {/* <nav className="mt-2 flex justify-center sm:justify-end gap-4 sm:gap-6">
           <Link to="#" className="text-xs hover:underline underline-offset-4 text-white">
             Terms of Service
           </Link>
           <Link to="#" className="text-xs hover:underline underline-offset-4 text-white">
             Privacy
           </Link>
-        </nav>
+        </nav> */}
       </div>
     </div>
   );

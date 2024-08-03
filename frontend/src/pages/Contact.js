@@ -42,7 +42,7 @@ const Contact = () => {
             <p className="text-gray-800 font-medium text-lg md:text-xl">
               Have a question or want to work together? Fill out the form below or send us an email at{" "}
               <Link to="#" className="underline">
-                hello@pioneerventures.com 
+                info@pioneerventures.com 
               </Link>
               .
             </p>
@@ -57,18 +57,18 @@ const Contact = () => {
                         <li className="flex items-start mb-4">
                         <LocationOnIcon/>
                             <span>
-                                A-142 Ab Star <br />
+                                A-142 Pioneer Ventures <br />
                                 Noida, Sector - 63 <br />
-                                11472
+                                201301
                             </span>
                         </li>
                         <li className="flex items-center mb-4">
                         <EmailIcon/>
-                            <span><Link to="mailto:amanrathore9811@gmail.com" className="text-white">amanrathore9811@gmail.com</Link></span>
+                            <span><Link to="mailto:amanrathore9811@gmail.com" className="text-white">info@pioneerventures.in</Link></span>
                         </li>
                         <li className="flex items-center">
                         <CallIcon />
-                            <span>702-279-3488</span>
+                            <span>9810475719</span>
                         </li>
                     </ul>
                     <ul className="flex mt-8">
