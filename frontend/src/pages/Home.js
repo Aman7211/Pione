@@ -291,7 +291,7 @@ At Pioneer Ventures, our mission is to pioneer new possibilities in each sector 
       }}
       className="relative flex flex-col gap-4 items-center justify-center px-4"
     >
-      <p className="text-xl md:text-3xl font-bold mt-[90px] md:my-5 md:mt-[-40px]">Our Values</p>
+      <p className="text-xl md:text-3xl font-bold mt-[110px] md:my-5 md:mt-[-50px]">Our Values</p>
 
   <div className="flex flex-col md:flex-row items-center md:items-start">
       {/* <div className="text-center  my-3 ml-2 md:ml-[10px]">*/}
