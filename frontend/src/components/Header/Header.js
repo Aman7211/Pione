@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom';
 import { BiMenu } from 'react-icons/bi';
 import Logo from '../../assets/images/pioneer ventures.jpeg';
 import './Header.css';
-import LoginIcon from '@mui/icons-material/Login';
 import CloseIcon from '@mui/icons-material/Close';
 import { useNavigate } from 'react-router-dom';
 
@@ -71,14 +70,9 @@ const Header = () => {
     };
   }, []);
 
-  const logoutHandler = () => {
-    localStorage.removeItem("authToken");
-    localStorage.removeItem("name");
-    navigate('/');
-  };
 
   return (
-    <header ref={headerRef} className="bg-white shadow-md py-4">
+    <header ref={headerRef} className="bg-white shadow-md py-4 border-b-2">
       <div className="container mx-auto flex items-center justify-between">
         <span className="md:hidden text-4xl cursor-pointer" onClick={toggleMenu}>
           <BiMenu />
@@ -108,35 +102,9 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          {/* {localStorage.getItem("authToken") ? (
-                      <NavLink>
-                <button className=" py-2 px-2 my-5 rounded-md text-white bg-red-800 font-medium" >
-                {localStorage.getItem("name")}
-              </button>
-                </NavLink>
-                  ):("")} */}
         </nav>
-        <div className="flex items-center">
-          {localStorage.getItem("authToken") ? (
-            <div className="flex items-center mt-4 md:mt-0">
-              <button className="bg-red-800 py-2 px-4 rounded-md text-white font-medium" onClick={logoutHandler}>
-                Logout
-              </button>
-            </div>
-          ) : (
-            <div className="flex items-center mt-4 md:mt-0">
-              <Link to="/login">
-                <button className="hidden md:block bg-[#1D40AF] py-2 px-6 md:px-4 rounded-md text-white font-medium hover:bg-red-500">
-                  Login
-                </button>
-                <button className=" md:hidden rounded-md text-[#1D40AF] mr-[20px]">
-                  <LoginIcon/>
-                </button>
-              </Link>
-            </div>
-          )}
+      
         </div>
-      </div>
     </header>
   );
 };
