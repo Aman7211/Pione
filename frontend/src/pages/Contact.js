@@ -25,11 +25,10 @@ const Contact = () => {
     const submitHandler = async(e)=>{
         e.preventDefault();
         try {
-          const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/api/v1/contact/form`, data);
           toast.success('Contact Form Submitted Successfully. You will get the call soon .. ');
           navigate('/'); 
         } catch (error) { 
-          toast.error("Registration Failed. Try Again")
+          console.log("Registration Failed. Try Again")
         }
     }
 
@@ -101,7 +100,7 @@ const Contact = () => {
   
                         </div>
                         <div className=" w-full px-4 mb-4">
-                            <input type="submit" value="Send" className="bg-[#790205] text-white py-2 px-5 rounded cursor-pointer hover:bg-green-900" />
+                            <input type="submit" value="Send" className="bg-[#790205] text-white py-2 px-5 rounded cursor-pointer hover:bg-red-900" />
                         </div>
                     </form>
                 </div>
