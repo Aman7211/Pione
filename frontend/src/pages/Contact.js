@@ -63,7 +63,7 @@ const Contact = () => {
                         </li>
                         <li className="flex items-center mb-4">
                         <EmailIcon/>
-                            <span><Link to="mailto:amanrathore9811@gmail.com" className="text-white">info@pioneerventures.in</Link></span>
+                            <span><Link to="mailto:amanrathore9811@gmail.com" className="text-white">info@pioneerventure.in</Link></span>
                         </li>
                         <li className="flex items-center">
                         <CallIcon />
