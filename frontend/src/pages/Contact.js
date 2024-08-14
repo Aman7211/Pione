@@ -41,7 +41,7 @@ const Contact = () => {
             <p className="text-gray-800 font-medium text-lg md:text-xl">
               Have a question or want to work together? Fill out the form below or send us an email at{" "}
               <Link to="#" className="underline">
-                info@pioneerventure.com 
+                info@pioneerventure.in
               </Link>
               .
             </p>
