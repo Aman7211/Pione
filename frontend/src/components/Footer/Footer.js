@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="text-center">
             <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
             <p className="text-gray-400">A-142 Noida Sector 63</p>
-            <p className="text-gray-400">info@pioneerventures.in</p>
+            <p className="text-gray-400">info@pioneerventure.in</p>
             <p className="text-gray-400">9810475719</p>
           </div>
         </div>
