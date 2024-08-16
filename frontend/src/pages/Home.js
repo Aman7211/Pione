@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { AuroraBackground } from "../components/ui/aurora-background";
 import LayoutGrid from "../components/ui/layout-grid";
-// import banner from '../assets/images/banner.mp4'
+import banner from '../assets/images/banner.mp4'
 import Card from "../components/card/Card";
 import approach from '../assets/images/arrowe.png';
 import b1 from '../assets/images/b1.png';
@@ -217,18 +217,20 @@ const cards = [
   ];
   return (
     <>
-    <div className=" relative w-full ">
-      <img src={b1} alt="" />
-      {/* <video src={banner}
-      autoPlay
-      loop
-      muted
+    <div className=" relative w-full md:h-[750px]">
+      {/* <img src={b1} alt="" /> */}
+      <video src={banner}
+     controls={false}
+     autoPlay
+     muted
+     playsInline
+     loop
       className="z-0"
-      ></video> */}
+      ></video>
     </div>
-    {/* <div className="absolute z-10 top-[150px] md:top-[200px] font-serif text-center tracking-wider text-xl md:text-3xl font-medium bg-[rgba(0,0,0,0.5)] md:bg-[rgba(0,0,0,0.2)] text-white w-full">
+    <div className="absolute z-10 top-[110px] md:top-[200px] font-serif text-center tracking-wider text-xl md:text-3xl font-medium bg-[rgba(0,0,0,0.5)] md:bg-[rgba(0,0,0,0.2)] text-white w-full">
     Where innovation meets opportunity.
-</div> */}
+</div>
 
 
     <AuroraBackground>
