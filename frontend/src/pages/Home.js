@@ -228,9 +228,7 @@ const cards = [
       className="z-0"
       ></video>
     </div>
-    <div className="absolute z-10 top-[110px] md:top-[200px] font-serif text-center tracking-wider text-xl md:text-3xl font-medium bg-[rgba(0,0,0,0.5)] md:bg-[rgba(0,0,0,0.2)] text-white w-full">
-    Where innovation meets opportunity.
-</div>
+
 
 
     <AuroraBackground>
