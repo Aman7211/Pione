@@ -4,10 +4,9 @@ import Home from './pages/Home';
 import Header from './components/Header/Header';
 import About from './pages/About';
 import Services from './pages/Services';
-// import Career from './pages/Career';
+import Career from './pages/Career';
 import Contact from './pages/Contact';
 import Footer from './components/Footer/Footer';
-import Investment from './pages/Investment';
 import Media from './components/ServiceComponent/Media';
 import Construction from './components/ServiceComponent/Construction';
 import Food from './components/ServiceComponent/Food';
@@ -16,6 +15,7 @@ import IT from './components/ServiceComponent/IT';
 import MediaDistribution from './components/ServiceComponent/MediaDistribution';
 import Renewable from './components/ServiceComponent/Renewable';
 import RealEstate from './components/ServiceComponent/RealEstate';
+import Gallery from './pages/Gallery';
 
 function App() {
   return (
@@ -26,9 +26,8 @@ function App() {
     <Route path='/' element={<Home/>} />
     <Route path='/about' element={<About/>} />
     <Route path='/services' element={<Services/>} />
-    {/* <Route path='/career' element={<Career/>} /> */}
+    <Route path='/careers' element={<Career/>} />
     <Route path='/contact' element={<Contact/>} />  
-    <Route path='/investment' element={<Investment/>} />
     <Route path='/media' element={<Media/>} />
     <Route path='/construction' element={<Construction/>} />
     <Route path='/food' element={<Food/>} />
@@ -37,7 +36,7 @@ function App() {
     <Route path='/mediadistribution' element={<MediaDistribution/>} />
     <Route path='/renew' element={<Renewable/>} />
     <Route path='/real' element={<RealEstate/>} />
-
+    <Route path='/gallery' element={<Gallery/>} />
   </Routes>
 
 <Footer/> 

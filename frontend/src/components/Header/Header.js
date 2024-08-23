@@ -20,6 +20,14 @@ const navLinks = [
     display: 'Our Portfolio',
   },
   {
+    path: '/gallery',
+    display: 'Gallery',
+  },
+  {
+    path: '/careers',
+    display: 'Career',
+  },
+  {
     path: '/contact',
     display: 'Contact Us',
   }
@@ -85,7 +93,7 @@ const Header = () => {
           <div onClick={toggleMenu} className='md:hidden text-red-800 absolute top-[35px] bg-gray-200 rounded-xl'>
             <CloseIcon />
           </div>
-          <ul className="flex flex-col md:flex-row md:justify-center space-y-4 md:space-y-0 md:space-x-8 mt-4">
+          <ul className="flex flex-col md:flex-row md:justify-center space-y-4 md:space-y-0 md:space-x-8 mt-4 text-xl">
             {navLinks.map((link) => (
               <li key={link.path}>
                 <NavLink
@@ -94,7 +102,7 @@ const Header = () => {
                   className={(navClass) =>
                     navClass.isActive
                       ? 'text-red-800 font-bold'
-                      : 'text-blue-800 font-bold'
+                      : 'text-[#05577d] font-bold'
                   }>
                   {link.display}
                 </NavLink>

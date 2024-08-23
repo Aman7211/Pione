@@ -11,16 +11,18 @@ import itimg from '../assets/images/25.jpeg';
 import disimg from '../assets/images/26.jpeg';
 import renewimg from '../assets/images/27.jpeg';
 import realimg from '../assets/images/28.jpeg';
-
+import StickyWhatsApp from "../components/StickyWhatsapp";
+import Chatbot from "../components/Chatbot";
+ 
  function Services() {
 
- 
+
   return (
     <>
-
+<StickyWhatsApp/>
+<Chatbot/>
     {/* video section   of section page  */}
-    <div className="flex">
-    <div className="w-[50%]">
+    <div  className="w-full ">
      <video src={vid1}
      controls={false}
      autoPlay
@@ -29,24 +31,13 @@ import realimg from '../assets/images/28.jpeg';
      loop
      />
     </div>
-<div className="w-[50%]">
-<video
-  className="w-[800px]"
-  src={vid1}
-  controls={false}
-  autoPlay
-  playsInline
-  muted
-  loop />
-</div>
-    </div>
 {/* 
     <div className="absolute top-[300px] z-50">
       <h1 className="text-4xl p-4 bg-white opacity-80 tracking-4">PORTFOLIO</h1>
     </div> */}
 
 
-<div className="mx-[30px] md:mx-0 my-5">
+<div className="mx-[35px] md:mx-0 my-5">
     <div className="flex flex-col md:flex-row md:justify-evenly ">
       <div className="  mx-4 my-4 w-full relative max-w-xs">
         <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
@@ -145,7 +136,7 @@ import realimg from '../assets/images/28.jpeg';
           </div>
         </div>
       </div>
-      
+     
     </div>
     <div className="flex flex-col md:flex-row justify-evenly">
       <div className="  mx-4 my-4 w-full relative max-w-xs">
@@ -178,9 +169,10 @@ import realimg from '../assets/images/28.jpeg';
           <Meteors number={20} />
           </div>
         </div>
+        </div>
       </div>
       </div>
-    </div>
+
     </>
   );
 }

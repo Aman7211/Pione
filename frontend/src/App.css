@@ -8,3 +8,12 @@ background-image: url("https://img.freepik.com/free-vector/abstract-white-bokeh-
     background-attachment: fixed;
 }
 
+
+/* In your global CSS file or in a <style> tag in your component file */
+.gradient-text {
+    background: linear-gradient( #980712, #0387A7); /* Customize your gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  

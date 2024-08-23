@@ -28,11 +28,18 @@ const LayoutGrid = ({ cards }) => {
               selected?.id === card.id
                 ? "rounded-lg cursor-pointer absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
-                ? "z-40 bg-white rounded-xl h-full w-full"
-                : "bg-white rounded-xl h-full w-full"
+                ? "z-40 bg-black bg-opacity-60 rounded-xl h-full w-full"
+                : "bg-black bg-opacity-60 rounded-xl h-full w-full"
             )}
             layout
           >
+            <motion.div
+              className="absolute inset-0 flex justify-start items-center z-20 bg-[rgba(0,0,0,0.5)]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: selected?.id === card.id ? 0 : 1 }}
+            >
+              <p className="text-white text-2xl p-1 absolute bottom-0 md:bottom-5 font-bold px-4">{card.name}</p>
+            </motion.div>
             {selected?.id === card.id && <SelectedCard selected={selected} />}
             <BlurImage card={card} />
           </motion.div>
@@ -54,11 +61,10 @@ const BlurImage = ({ card }) => {
   const [loaded, setLoaded] = useState(false);
   return (
     <img
-      src={card.thumbnail} // Use the imported image variable here
+      src={card.thumbnail}
       onLoad={() => setLoaded(true)}
       className={cn(
-        "object-cover object-top absolute inset-0 h-full w-full transition duration-200",
-        loaded ? "blur-none" : "blur-md"
+        "object-cover object-top absolute inset-0 h-full w-full transition duration-200"
       )}
       alt="thumbnail"
     />

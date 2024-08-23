@@ -1,11 +1,9 @@
-
 import { motion } from "framer-motion";
 import { AuroraBackground } from "../components/ui/aurora-background";
 import LayoutGrid from "../components/ui/layout-grid";
 import banner from '../assets/images/banner.mp4'
 import Card from "../components/card/Card";
 import approach from '../assets/images/arrowe.png';
-import b1 from '../assets/images/b1.png';
 import { Link } from "react-router-dom";
 import mediaimg from '../assets/images/21.jpeg';
 import constructionimg from '../assets/images/22.jpeg';
@@ -15,9 +13,10 @@ import itimg from '../assets/images/25.jpeg';
 import disimg from '../assets/images/26.jpeg';
 import renewimg from '../assets/images/27.jpeg';
 import realimg from '../assets/images/28.jpeg';
+import StickyWhatsApp from "../components/StickyWhatsapp";
+import Chatbot from "../components/Chatbot";
 
 const Home = () => {
-
   const data =[
 {image:"https://img.freepik.com/free-photo/glowing-blue-sphere-held-by-human-hand-generated-by-ai_188544-41033.jpg?t=st=1719040686~exp=1719044286~hmac=25a1ed20b056110d01005fe728bed29e60bcd7b8052397b2d146cfd624c70b4b&w=1060",
   heading:"Innovation",
@@ -32,56 +31,6 @@ const Home = () => {
   paragraph:"Creating meaningful change for our portfolio companies and society"
 }
   ]  ;
-
-  const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-  );
-  const items = [
-    {
-      title: "The Dawn of Innovation",
-      description: "Explore the birth of groundbreaking ideas and inventions.",
-      header: <Skeleton />,
-      // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Digital Revolution",
-      description: "Dive into the transformative power of technology.",
-      header: <Skeleton />,
-      // icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Art of Design",
-      description: "Discover the beauty of thoughtful and functional design.",
-      header: <Skeleton />,
-      // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Power of Communication",
-      description:
-        "Understand the impact of effective communication in our lives.",
-      header: <Skeleton />,
-      // icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Pursuit of Knowledge",
-      description: "Join the quest for understanding and enlightenment.",
-      header: <Skeleton />,
-      // icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Joy of Creation",
-      description: "Experience the thrill of bringing ideas to life.",
-      header: <Skeleton />,
-      // icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
-    },
-    {
-      title: "The Spirit of Adventure",
-      description: "Embark on exciting journeys and thrilling discoveries.",
-      header: <Skeleton />,
-      // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-    },
-  ];
-
 
 const SkeletonOne = () => {
   return (
@@ -173,50 +122,61 @@ const SkeletonEight = () => {
   );
 };
 
+
 const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-1",
+    name:"Media",
     thumbnail: mediaimg},
    {
     id: 2,
     content: <SkeletonTwo />,
     className: "col-span-1",
+    name:"Construction",
     thumbnail: constructionimg},
   {
     id: 3,
     content: <SkeletonThree />,
     className: "col-span-1",
+    name:"Food & Beverages",
     thumbnail: foodimg},
   {
     id: 4,
     content: <SkeletonFour />,
     className: "md:col-span-1",
+    name:"Health",
     thumbnail: healthimg},
     {
     id: 5,
     content: <SkeletonFive />,
     className: "md:col-span-2",
+    name:"Information Technology",
     thumbnail: itimg},
      {
     id: 6,
     content: <SkeletonSix />,
     className: "md:col-span-1",
+    name:"Media Distribution",
     thumbnail: disimg},
      {
     id: 7,
     content: <SkeletonSeven />,
     className: "md:col-span-1",
+    name:"Renewable Energy",
     thumbnail: renewimg},
    {
     id: 8,
     content: <SkeletonEight />,
     className: "md:col-span-1",
+    name:"Real Estate",
     thumbnail: realimg},
   ];
   return (
     <>
+     <StickyWhatsApp/>
+     <Chatbot/>
     <div className=" relative w-full md:h-[750px]">
       {/* <img src={b1} alt="" /> */}
       <video src={banner}
@@ -243,7 +203,7 @@ const cards = [
       className="relative flex flex-col gap-4 items-center justify-center px-4"
     >
         <div className="flex justify-center my-2 md:my-3 ">
-<p className="md:text-3xl text-xl font-bold">Future of Innovations & Growths </p>
+<p className="md:text-3xl text-xl font-bold gradient-text">Future of Innovations & Growths </p>
     </div>
      {/* all content of home page */}
 <div  className="text-lg text-center md:mx-[110px] ">
@@ -253,20 +213,6 @@ At Pioneer Ventures, our mission is to pioneer new possibilities in each sector 
     </motion.div>
     </AuroraBackground>
 
-
-
-    {/* <BentoGrid className="max-w-5xl mx-auto">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
-        />
-      ))}
-    </BentoGrid> */}
 
           {/* card hover effec t sectioon */}
           <div className="flex justify-center items-center">
@@ -291,7 +237,7 @@ At Pioneer Ventures, our mission is to pioneer new possibilities in each sector 
       }}
       className="relative flex flex-col gap-4 items-center justify-center px-4"
     >
-      <p className="text-xl md:text-3xl font-bold mt-[160px] md:my-5 md:mt-[-70px]">Our Values</p>
+      <p className="text-xl md:text-3xl font-bold mt-[160px] md:my-5 md:mt-[-70px] gradient-text">Our Values</p>
 
   <div className="flex flex-col md:flex-row items-center md:items-start">
       {/* <div className="text-center  my-3 ml-2 md:ml-[10px]">*/}
@@ -310,7 +256,7 @@ At Pioneer Ventures, our mission is to pioneer new possibilities in each sector 
     </AuroraBackground>
 </div>
 <div className="">
-<p className="text-center text-3xl font-bold mt-40 md:mt-6 my-2">Our Business Verticals</p>
+<p className="text-center text-3xl font-bold mt-40 md:mt-6 my-2 gradient-text">Our Business Verticals</p>
     <div className=" md:h-[110vh] ">
       <LayoutGrid cards={cards} />
     </div>
@@ -321,13 +267,13 @@ At Pioneer Ventures, our mission is to pioneer new possibilities in each sector 
 
 <div className="my-4 md:mb-14 text-center">
   {/* contact us */}
-  <p className="text-center text-3xl font-bold mt-6 my-2">Contact us</p>
+  <p className="text-center text-3xl font-bold mt-6 my-2 gradient-text">Contact us</p>
 
   <div  className="text-lg text-center mx-3 md:mx-[110px] my-4">
   Ready to take the next step? We'd love to hear from you.
 </div>
 <Link to={'/contact'}>
-<button className="text-white bg-blue-600 p-3 rounded my-4">
+<button className="text-white bg-[#05577d] p-3 rounded my-4">
 Connect Now
 </button>
 </Link>

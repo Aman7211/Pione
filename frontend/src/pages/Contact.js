@@ -10,6 +10,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
+import StickyWhatsApp from "../components/StickyWhatsapp";
+import Chatbot from "../components/Chatbot";
 
 const Contact = () => {
     const navigate = useNavigate();
@@ -34,13 +36,15 @@ const Contact = () => {
 
     return (
         <>
+        <StickyWhatsApp/>
+        <Chatbot/>
         <section className="defg py-12 md:py-24 ">
         <div className="  container px-4 md:px-6 overflow-hidden">
           <div className="max-w-3xl mx-auto space-y-6 text-center">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get in Touch</h1>
             <p className="text-gray-800 font-medium text-lg md:text-xl">
               Have a question or want to work together? Fill out the form below or send us an email at{" "}
-              <Link to="#" className="underline">
+              <Link to="mailto:amanrathore9811@gmail.com" className="underline">
                 info@pioneerventure.in
               </Link>
               .
