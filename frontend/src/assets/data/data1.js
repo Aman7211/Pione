@@ -5,10 +5,6 @@ const data1 = [
         images: [
           {
             imageLink:
-            "https://lh3.googleusercontent.com/p/AF1QipMfnwzYln42wtnbawx8sQFxj_4pDKJNOBW-9_U6=s1360-w1360-h1020"
-          },
-          {
-            imageLink:
             "https://lh3.googleusercontent.com/p/AF1QipMzQ8T4MMXChpWZrOfI-tgpZjz4bM63wrzVnYN9=s1360-w1360-h1020" 
           },
           {
@@ -18,11 +14,7 @@ const data1 = [
           {
             imageLink:
             "https://lh3.googleusercontent.com/p/AF1QipMCh5ETjC85EhtSmkGBv_Zlp7QOPXDNufqxh1GT=s1360-w1360-h1020" 
-          },
-          {
-            imageLink:
-         "https://lh3.googleusercontent.com/p/AF1QipMODKtgMKw02ky2r1WYR_cecEh2h-rY7JUxtn3o=s1360-w1360-h1020"
-          },
+          }
         ],
       },
     {
@@ -79,26 +71,6 @@ const data1 = [
             imageLink:
             "https://t4.ftcdn.net/jpg/00/68/63/23/360_F_68632352_kmHLwFc2rQLmnKqn6gM0bhOPqxRTx8sY.jpg"  
           },
-        //   {
-        //     imageLink:
-        //       "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1493&q=80",
-        //   },
         ],
       },
       {
@@ -141,19 +113,7 @@ const data1 = [
             imageLink:
             "https://t3.ftcdn.net/jpg/03/18/14/08/360_F_318140882_seYmbowNlJMFQqoBGxULHUiIVB92uz0c.jpg"
           },
-        //   {
-        //     imageLink:
-        //       "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg",
-        //   },
-    
+      
         ],
       },
       {
@@ -168,19 +128,6 @@ const data1 = [
             imageLink:
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNyjOe63_uBquJjlRWmM8mmCvjUtsQQq26aQ&s" 
           },
-        //   {
-        //     imageLink:
-        //       "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg",
-        //   },
-    
         ],
       },
       {
@@ -194,20 +141,7 @@ const data1 = [
           {
             imageLink:
            "https://img.indiafilings.com/learn/wp-content/uploads/2015/10/12011006/Real-Estate-Agent-Business-India.jpg"
-          },
-        //   {
-        //     imageLink:
-        //       "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://demos.creative-tim.com/material-kit-pro/assets/img/examples/blog5.jpg",
-        //   },
-        //   {
-        //     imageLink:
-        //       "https://material-taillwind-pro-ct-tailwind-team.vercel.app/img/content2.jpg",
-        //   },
-    
+          },    
         ],
       },
   ];
