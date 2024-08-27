@@ -44,7 +44,7 @@ function Services() {
           { img: renewimg, title: "Renewable Energy", description: "The Renewable Energy vertical is dedicated to advancing sustainable solutions through the development of biodegradable gas.", link: "/renew" },
           { img: realimg, title: "Real Estate", description: "The Real Estate vertical at Pioneer Ventures is committed to transforming spaces and creating vibrant communities.", link: "/real" }
         ].map((service, index) => (
-          <div key={index} className="mx-3 my-5 w-full h-auto max-w-sm md:max-w-xs  relative shadow-xl">
+          <div key={index} className="mx-3 my-5 w-full h-auto max-w-xs  relative shadow-xl">
             <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-90 bg-red-500 rounded-full blur-3xl" />
             <div className="relative shadow-xl bg-cover border border-gray-800 overflow-hidden rounded-2xl flex flex-col justify-end items-start" style={{ backgroundImage: `url(${service.img})` }}>
               <div className="bg-[rgba(0,0,0,0.6)] px-4 py-8 h-full">
