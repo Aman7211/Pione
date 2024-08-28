@@ -207,7 +207,7 @@ const cards = [
     </div>
      {/* all content of home page */}
 <div  className="text-lg text-center md:mx-[110px] ">
-At Pioneer Ventures, our mission is to pioneer new possibilities in each sector we operate in, driven by a commitment to innovation, sustainability, and excellence. Our diversified expertise enables us to navigate complexities and seize opportunities, delivering value and shaping industries globally.
+Welcome to Pioneer Ventures, a vibrant hub of innovation and excellence. We're a forward-thinking organization dedicated to driving growth, transformation, and exceptional quality across diverse industries. Rooted in creativity, expertise, and passion, we deliver exceptional service and quality with precision and care.
 </div>
 
     </motion.div>
@@ -245,7 +245,8 @@ At Pioneer Ventures, our mission is to pioneer new possibilities in each sector 
       {/* all content of home page */}
       <div className=" text-md md:text-lg font-medium mx-4 text-center">
         <p className="my-2 md:my-5 md:mt-0 ">
-        At <span className="text-red-800">Pioneer Ventures,</span> we are dedicated to fostering innovation, integrity, and excellence across our diverse range of businesses. Our core values drive us to deliver exceptional quality and service in media, construction, real estate, food and beverages, healthcare, and beyond. We believe in the power of collaboration, sustainability, and community engagement, striving to have a positive impact on everything we do. Our commitment to ethical practices and continuous improvement ensures that we not only meet but exceed the expectations of our partners and stakeholders.
+        At <span className="text-red-800">Pioneer Ventures,</span> we're devoted to cultivating creativity, authenticity, and distinction across our diverse portfolio of businesses. Our core values propel us to deliver outstanding quality and service in media, construction, real estate, food and beverages, healthcare, and beyond. We believe in the potency of synergy, eco-consciousness, and social responsibility, striving to make a meaningful difference in everything we do. Our commitment to principled practices and ongoing refinement ensures that we not only meet but surpass the expectations of our partners and stakeholders.
+
         </p>
       </div>
       <div className="w-[40%] md:w-[40%] flex justify-center md:justify-start">
